@@ -22,7 +22,7 @@
     "message": "Note: This Add-on is completely free! Please consider make a small donation or write a review at addons.mozilla.org. Thank you!"
   },
   "bugs": {
-    "message": "If you find any bugs, have any suggestions or some ideas for this Add-on: Please create a new issue."
+    "message": "If you encounter any bugs, have suggestions, or ideas for this extension, please create a new issue on GitHub."
   },
    "windows": {
     "message": "Windows shortcut keys: Ctrl + Shift + U"
@@ -80,5 +80,20 @@
   },
   "change_shortcut3": {
     "message": "3. Click in Manage Extension Shortcuts"
-  }
+  },
+  "removeElements": {
+    "message": "Enable removing element from the page"
+  },
+  "description_removeElements": {
+    "message": "Allows or disallows removing an element from the page (requires an active context menu)"
+  },
+  "actions": {
+    "message": "Actions"
+  },
+  "remove": {
+    "message": "Remove Element"
+  },
+  "unremove": {
+    "message": "Undo Remove Element"
+  } 
 }

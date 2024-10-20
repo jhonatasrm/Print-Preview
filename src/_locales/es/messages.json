@@ -22,7 +22,7 @@
     "message": "Nota: ¡Este complemento es completamente gratuito! Por favor considere hacer una pequeña donación o escribir una reseña en addons.mozilla.org. ¡Gracias!"
   },
   "bugs": {
-    "message": "Si encuentra algún error, tiene alguna sugerencia o idea para este complemento: Por favor, abra un nuevo issue."
+    "message": "Si encuentras algún error, tienes sugerencias o ideas para esta extensión, por favor crea una nueva issue en GitHub."
   },
    "windows": {
     "message": "Teclas de acceso directo de Windows: Ctrl + Shift + U"
@@ -80,5 +80,20 @@
   },
   "change_shortcut3": {
     "message": "3. Haga clic en administrar los accesos directos de la extensión"
+  },
+  "removeElements": {
+    "message": "Habilitar eliminar elemento de la página"
+  },
+  "description_removeElements": {
+    "message": "Permite o no eliminar un elemento de la página (requiere un menú contextual activo)"
+  },
+  "actions": {
+    "message": "Acciones"
+  },
+  "remove": {
+    "message": "Eliminar Elemento"
+  },
+  "unremove": {
+    "message": "Deshacer Eliminación de Elemento"
   }
 }

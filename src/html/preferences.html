@@ -1,62 +1,74 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title id="preferencesTitle" data-i18n="preferences"></title>
-    <link rel="shortcut icon" href="../res/icons/favicon.ico" type="image/x-icon"/>
-    <link rel="icon" href="../res/icons/favicon.ico" type="image/x-icon"/>
-    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="../res/icons/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../res/icons/favicon.ico" type="image/x-icon" />
+    <link href="../css/bootstrap.css" rel="stylesheet" />
     <script src="../js/jquery-3.3.1.js"></script>
     <script src="../js/background.js"></script>
-    <link href="../css/style.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet" />
 </head>
 
-<body style="background-color:white;" class="col-md-12">
-<main>
-    <header>
-        <nav class="icons">
-            <ul>
-                <div>
-                    <img src="../res/icons/icon.png" style="float:left; padding-right:10px;margin-top:-10px;"><h4>
-                    <strong id="version"></strong></h4>
-                </div>
-                <li>
-                    <a href="https://github.com/jhonatasrm/print-preview/" title="Github" target="_blank"><img
-                            src="../res/icons/github.png" width="20" height="20"
-                            style="margin-bottom:7px;margin-right:15px;"></a>
-                    <a href='https://ko-fi.com/S6S5S3WU' target='_blank'><img height='36'
-                                                                              style='border:0px;height:36px;'
-                                                                              src='https://az743702.vo.msecnd.net/cdn/kofi1.png?v=0'
-                                                                              border='0'
-                                                                              alt='Buy Me a Coffee at ko-fi.com'/></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <div class="alert alert-success alert-dismissible fade show" style="display:none;" id="success">
-        <strong data-i18n="saved_preferences"></strong>
-        <button type="button" class="close" data-dismiss="alert"></button>
-    </div>
-    <fieldset class="col-md-12">
-        <div>
-            <h4><strong id="preferences" data-i18n="preferences"></strong>
-                <a href="../html/about.html" title="About"><img src="../res/icons/about.png" style="float:right;"></a>
-            </h4>
+<body class="col-md-12">
+    <main>
+        <header>
+            <nav class="icons">
+                <ul>
+                    <div class="d-flex-center">
+                        <img src="/res/icons/icon.png" class="icon-addon">
+                        <h4><strong id="version"></strong></h4>
+                    </div>
+                    <li class="align-center">
+                        <a href="https://github.com/jhonatasrm/print-preview/" title="Github" target="_blank"><img
+                                src="   /res/icons/github.svg" class="github"></a>
+                        <a href="https://github.com/sponsors/jhonatasrm" target='_blank' title="Github Sponsor"><img
+                                src="/res/icons/github-sponsor.svg" alt="" class="github"></a>
+                        <a href='https://ko-fi.com/jhonatasrm' target='_blank' title="Ko-fi"><img class="ko-fi"
+                                src='/res/icons/ko-fi.svg' alt='Buy Me a Coffee at ko-fi.com' /></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="alert alert-success alert-dismissible fade show" style="display:none;" id="success">
+            <strong data-i18n="saved_preferences"></strong>
+            <button type="button" class="close" data-dismiss="alert"></button>
         </div>
-        <br>
-        <div class="col-md-12 col-sm-12" style="margin-top:20px;">
-            <label data-i18n="contextMenu">
-            </label>
-            <label class="btn btn-outline-primary " style="width:200px;float:right; margin-top:2px;">
-                <input type="radio" name="contextMenu" value="false" checked="checked">Off</label>
-            <label class="btn btn-outline-primary " style="width:200px;float:right;margin-top:2px;">
-                <input type="radio" name="contextMenu" value="true">On</label>
-            <small class="form-text text-muted" data-i18n="description_contextmenu" style="margin-top:-10px;"></small>
-        </div>
-    </fieldset>
-</main>
-<script src="../js/language.js"></script>
-<script src="../js/preferences.js"></script>
+        <fieldset class="col-md-12">
+            <div>
+                <h4><strong id="preferences" data-i18n="preferences"></strong>
+                    <a href="../html/about.html" title="About"><img class="about-icon" src="/res/icons/about.png"
+                            style="float:right;"></a>
+                </h4>
+            </div>
+            <br>
+            <div class="col-md-12 col-sm-12 top-distance">
+                <label data-i18n="contextMenu">Context Menu</label>
+                <label class="btn btn-outline-primary option-radio">
+                    <input type="radio" name="contextMenu" value="false" checked="checked">Off</label>
+                <label class="btn btn-outline-primary option-radio">
+                    <input type="radio" name="contextMenu" value="true">On</label>
+                <small class="form-text text-muted" data-i18n="description_contextmenu"
+                    style="margin-top:-10px;"></small>
+            </div>
+
+            <div class="col-md-12 col-sm-12" style="margin-top:20px;">
+                <label data-i18n="removeElements"></label>
+                <label class="btn btn-outline-primary option-radio">
+                    <input type="radio" name="removeElements" value="false" checked="checked">Off</label>
+                <label class="btn btn-outline-primary option-radio">
+                    <input type="radio" name="removeElements" value="true">On</label>
+                <small class="form-text text-muted" data-i18n="description_removeElements"
+                    style="margin-top:-10px;"></small>
+            </div>
+        </fieldset>
+
+    </main>
+    <script src="../js/language.js"></script>
+    <script src="../js/preferences.js"></script>
 </body>
+
 </html>

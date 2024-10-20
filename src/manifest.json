@@ -18,17 +18,18 @@
     "96": "/res/icons/icon@2x.png"
   },
   "browser_action": {
+    "default_popup": "/html/popup.html",
     "browser_style": true,
     "default_icon": "/res/icons/icon@2x.png",
     "theme_icons": [
       {
-        "light": "/res/icons/print_light_theme.png",
-        "dark": "/res/icons/print_dark_theme.png",
+        "light": "/res/icons/print-preview_32.png",
+        "dark": "/res/icons/print-preview_32.png",
         "size": 16
       },
       {
-        "light": "/res/icons/print_light_theme.png",
-        "dark": "/res/icons/print_dark_theme.png",
+        "light": "/res/icons/print-preview_32.png",
+        "dark": "/res/icons/print-preview_32.png",
         "size": 32
       }
     ],
@@ -50,5 +51,12 @@
   "background": {
     "scripts": ["/js/background.js"]
   },
-  "permissions": ["tabs", "contextMenus", "activeTab", "storage", "menus"]
+  "permissions": [
+    "tabs", 
+    "contextMenus",
+    "activeTab",
+    "storage", 
+    "menus", 
+    "<all_urls>"
+  ]
 }

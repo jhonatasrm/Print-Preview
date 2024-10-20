@@ -23,7 +23,7 @@
   "message": "Remarque: Cet Add-on est entièrement gratuit! Merci d'envisager de faire un petit don ou d'écrire un commentaire sur addons.mozilla.org. Merci!"
   },
   "bugs": {
-  "message": "Si vous trouvez des erreur, avez des suggestions ou des idées pour ce module complémentaire: veuillez créer un nouveau problème."
+  "message": "Si vous rencontrez un bug, avez des suggestions ou des idées pour cette extension, veuillez créer une nouvelle issue sur GitHub.  "
   },
    "windows": {
     "message": "Touches de raccourci Windows: Ctrl + Maj + U"
@@ -81,5 +81,20 @@
   },
   "change_shortcut3": {
     "message": "3. Cliquez sur Gérer les raccourcis d'extensions"
+  },
+  "removeElements": {
+    "message": "Activer la suppression d'un élément de la page"
+  },
+  "description_removeElements": {
+    "message": "Permet ou non de supprimer un élément de la page (nécessite un menu contextuel actif)"
+  },
+  "actions": {
+    "message": "Actions"
+  },
+  "remove": {
+    "message": "Supprimer l'Élément"
+  },
+  "unremove": {
+    "message": "Annuler la Suppression de l'Élément"
   }
 }

@@ -1,3 +1,7 @@
+body {
+  background-color: #FFFFFF !important;
+}
+
 #search_image {
     margin-top:2px;
 }
@@ -72,4 +76,98 @@ input[type='radio']:before {
 }
 input[type='radio']:checked:before {
   background: #22e5ab;
+}
+
+
+.icons ul {
+  display: block
+}
+
+.icons ul li {
+  display: inline-block;
+  margin-top: 0;
+  vertical-align: middle
+}
+
+@media screen and (max-width: 35rem) {
+  .icons ul li.browser--link {
+    display: none
+  }
+}
+
+.icons ul li a {
+  display: inline-block
+}
+
+.icons ul li a img {
+  display: block
+}
+
+.icons ul li a svg {
+  display: block;
+  height: auto;
+  width: 1rem
+}
+
+.icons ul li a svg path {
+  fill: #0070ba;
+  transition: all .15s linear
+}
+
+.icons ul li a:hover svg path {
+  fill: #1546a0
+}
+
+.icons ul li:last-child {
+  float: right
+}
+
+.icons ul::after {
+  clear: both;
+  content: '';
+  display: table
+}
+
+.ko-fi {
+  border: 0px;
+  height: 28px;
+  margin-right: -8px
+}
+
+.github {
+  margin-right: 8px;
+  height: 28px;
+}
+
+.icon-about:hover,
+.ko-fi:hover,
+.github:hover,
+.preferences-about:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+h4 {
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.option-radio {
+  width:200px;
+  float:right;
+  margin-top:2px;
+  cursor: pointer;
+}
+
+.top-distance {
+  margin-top:20px;
+}
+
+.d-flex-center {
+  display: flex;  
+  width: 100%; 
+  align-items: center;
 }

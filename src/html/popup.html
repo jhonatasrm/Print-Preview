@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import Raleway for titles and Montserrat for buttons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Raleway:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            width: 250px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .print-section {
+            margin-bottom: 10px;
+        }
+
+        .print-preview-btn {
+            background: linear-gradient(145deg, #b3e5fc, #a3d9f5);
+            border-radius: 8px;
+            width: 100%;
+            padding: 14px 28px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.5px;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .print-preview-btn:hover {
+            background: linear-gradient(145deg, #a3d9f5, #93cde8);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .divider {
+            position: relative;
+            text-align: center;
+            margin: 10px 0;
+            border-bottom: 1px solid #b0b0b0;
+        }
+
+        .divider span {
+            position: relative;
+            top: 10px;
+            background-color: #ffffff;
+            padding: 0 10px;
+            color: #b0b0b0;
+            font-family: 'Raleway', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .element-actions {
+            margin-top: 10px;
+        }
+
+        .element-actions button {
+            width: 100%;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.5px;
+            color: #333;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 12px;
+            background: linear-gradient(145deg, #22e5ab, #1dc0a5);
+        }
+
+        .element-actions button:hover {
+            background: linear-gradient(145deg, #1dc0a5, #1ab294);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .undo-remove-btn {
+            background: linear-gradient(145deg, #33e5ba, #2fc5aa);
+        }
+
+        .undo-remove-btn:hover {
+            background: linear-gradient(145deg, #2fc5aa, #29b294);
+        }
+
+        .preferences {
+            float: right;
+            margin-bottom: 10px;
+            cursor: pointer;
+        }
+
+        .d-flex-align-elements {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .d-flex-preferences {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        /* Error message styles */
+        .error-message {
+            display: none;
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid red;
+            border-radius: 5px;
+            background-color: #fdd;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body id="popup">
+    <div class="d-flex-preferences">
+        <a href="../html/preferences.html" target="_blank">
+            <img id="preferences" src="/res/icons/preferences.png" class="preferences" width="16" height="16">
+        </a>
+    </div>
+
+    <div class="print-section">
+        <button id="print-preview-btn" class="print-preview-btn" data-i18n="extensionName"></button>
+    </div>
+
+    <div class="divider">
+        <span data-i18n="actions"></span>
+    </div>      
+
+    <div class="element-actions">
+        <button id="remove-element-btn" class="remove-element-btn" data-i18n="remove"></button>
+        <button id="undo-remove-btn" class="undo-remove-btn" data-i18n="unremove"></button>
+    </div>
+    <!-- Error Message Area -->
+    <div class="error-message" id="error-message"></div>
+
+    <script src="/js/popup.js"></script>
+    <script src="/js/background.js"></script>
+    <script src="/js/language.js"></script>
+</body>
+
+</html>

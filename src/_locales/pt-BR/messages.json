@@ -22,7 +22,7 @@
     "message": "Nota: Esta extensão é totalmente gratuita! Por favor, considere fazer uma pequena doação ou análise em addons.mozilla.org. Obrigado! "
   },
   "bugs": {
-    "message": "Se você encontrar algum bug, tiver sugestões ou algumas idéias para esta extensão. Por favor, crie uma nova issue."
+    "message": "Se você encontrar algum bug, tiver sugestões ou algumas idéias para esta extensão. Por favor, crie uma nova issue no GitHub."
   },
   "windows": {
     "message": "Windows teclas de atalho: Ctrl + Shift + U"
@@ -80,5 +80,20 @@
   },
   "change_shortcut3": {
     "message": "3. Clique em Gerenciar atalhos de extensões"
+  },
+  "removeElements": {
+    "message": "Habilitar remover elemento da página"
+  },
+  "description_removeElements": {
+    "message": "Permite ou não remover elemento da página  (necessário menu de contexto ativo)"
+  },
+  "actions": {
+    "message": "Ações"
+  },
+  "remove": {
+    "message": "Remover Elemento"
+  },
+  "unremove": {
+    "message": "Desfazer Remoção de Elemento"
   }
 }
